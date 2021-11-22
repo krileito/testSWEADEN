@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "autoname": "CRE.#####",
+ "creation": "2021-11-22 08:56:30.852513",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ci",
+  "fecha_de_nacimiento",
+  "tel\u00e9fono",
+  "vivienda",
+  "direcci\u00f3n_domiciliaria",
+  "actividad_econ\u00f3mica",
+  "estado_civil",
+  "datosc",
+  "nombre_de_c\u00f3nyuge",
+  "ci_conyuge",
+  "trabajo_del_conyugue",
+  "fecha_de_nacimiento_conyugue"
+ ],
+ "fields": [
+  {
+   "fieldname": "ci",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "CI",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_de_nacimiento",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Fecha de Nacimiento",
+   "reqd": 1
+  },
+  {
+   "fieldname": "tel\u00e9fono",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tel\u00e9fono",
+   "reqd": 1
+  },
+  {
+   "default": "PROPIA",
+   "fieldname": "vivienda",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Vivienda",
+   "options": "PROPIA\nARRENDADA\nDE FAMILIARES",
+   "reqd": 1
+  },
+  {
+   "fieldname": "direcci\u00f3n_domiciliaria",
+   "fieldtype": "Data",
+   "label": "Direcci\u00f3n domiciliaria",
+   "reqd": 1
+  },
+  {
+   "fieldname": "actividad_econ\u00f3mica",
+   "fieldtype": "Data",
+   "label": "Actividad econ\u00f3mica"
+  },
+  {
+   "default": "SOLTER@",
+   "fieldname": "estado_civil",
+   "fieldtype": "Select",
+   "label": "Estado civil",
+   "options": "SOLTER@\nCASADO@\nDIVORCIAD@\nVIUD@\nUNIO LIBRE"
+  },
+  {
+   "fieldname": "datosc",
+   "fieldtype": "Data",
+   "label": "datosc"
+  },
+  {
+   "fieldname": "nombre_de_c\u00f3nyuge",
+   "fieldtype": "Data",
+   "label": "Nombre de c\u00f3nyuge",
+   "reqd": 1
+  },
+  {
+   "fieldname": "trabajo_del_conyugue",
+   "fieldtype": "Data",
+   "label": "Trabajo del Conyugue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ci_conyuge",
+   "fieldtype": "Data",
+   "label": "C.I c\u00f3nyuge",
+   "reqd": 1
+  },
+  {
+   "fieldname": "fecha_de_nacimiento_conyugue",
+   "fieldtype": "Date",
+   "label": "Fecha de Nacimiento conyugue"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "credito",
+   "link_fieldname": "datosc"
+  },
+  {
+   "link_doctype": "credito",
+   "link_fieldname": "nombre_de_c\u00f3nyuge"
+  },
+  {
+   "link_doctype": "credito",
+   "link_fieldname": "ci_conyuge"
+  },
+  {
+   "link_doctype": "credito",
+   "link_fieldname": "trabajo_del_conyugue"
+  },
+  {
+   "link_doctype": "credito",
+   "link_fieldname": "fecha_de_nacimiento_conyugue"
+  }
+ ],
+ "modified": "2021-11-22 11:04:02.057060",
+ "modified_by": "Administrator",
+ "module": "Custom",
+ "name": "credito",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
